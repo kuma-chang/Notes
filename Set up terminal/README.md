@@ -53,19 +53,19 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
       - set to `Meslo LG L DZ For Powerline`
       - reopen VS code
 
-  - Powerlevel10k Theme
-    - open iTerm2
-    - Install with oh-my-zsh
+- Powerlevel10k Theme
+  - open iTerm2
+  - Install with oh-my-zsh
 
-      ```Bash
-      git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-      ```
+    ```Bash
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    ```
 
-    - Use vim open `.zshrc`
-    - set theme `ZSH_THEME="powerlevel10k/powerlevel10k"`
-    - reopen iTerm2
-    - Follow Powerlevel10k setting prompt
-    - VS code terminal font setting
-      - Settings -> Features -> Terminal -> Integrated: Font Family
-      - set to `MesloLGS NF`
-      - reopen VS code
+  - Use vim open `.zshrc`
+  - set theme `ZSH_THEME="powerlevel10k/powerlevel10k"`
+  - reopen iTerm2
+  - Follow Powerlevel10k setting prompt
+  - VS code terminal font setting
+    - Settings -> Features -> Terminal -> Integrated: Font Family
+    - set to `MesloLGS NF`
+    - reopen VS code
