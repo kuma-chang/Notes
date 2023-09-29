@@ -4,6 +4,7 @@
   - [Homebrew](#homebrew)
   - [iTerm2](#iterm2)
   - [oh-my-zsh](#oh-my-zsh)
+  - [Vim](#vim)
 
 ## Homebrew
 
@@ -69,3 +70,46 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
     - Settings -> Features -> Terminal -> Integrated: Font Family
     - set to `MesloLGS NF`
     - reopen VS code
+
+## Vim
+
+- Vundle
+  - Link: [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
+  - set up directory
+
+    ```Bash
+    mkdir ~/.vim
+    mkdir ~/.vim/bundle
+    ```
+
+  - Set up Vundle:
+
+    ```Bash
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    ```
+
+  - Configure Plugins:
+
+    Put this at the top of your .vimrc to use Vundle. Remove plugins you don't need, they are for illustration purposes. (see Github page)
+  
+  - Install Plugins:
+
+    Launch `vim` and run `:PluginInstall`
+
+- Solarized color theme
+  - Link: [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
+  - clone and move
+
+    ```Bash
+    git clone git@github.com:altercation/vim-colors-solarized.git
+    cd vim-colors-solarized/colors
+    mv solarized.vim ~/.vim/colors/
+    ```
+
+  - Modify .vimrc
+
+    ```Bash
+    syntax enable
+    set background=dark
+    colorscheme solarized
+    ```
