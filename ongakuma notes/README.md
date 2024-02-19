@@ -4,6 +4,7 @@
   - [venv](#venv)
   - [nvm npm](#nvm-npm)
   - [VS Code extensions](#vs-code-extensions)
+  - [Set up Django](#set-up-django)
 
 ## venv
 
@@ -74,3 +75,18 @@
 - Django
 - React(ES7+ React/Redux/React-Native snippets)
 - JavaScript(JavaScript (ES6) code snippets)
+
+## Set up Django
+
+- Install Django
+
+  ```bash
+  pip install django djangorestframework
+  ```
+
+- Start project and app
+
+  ```bash
+  django-admin startproject music_controller
+  django-admin startapp api
+  ```
