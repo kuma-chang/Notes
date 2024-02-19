@@ -90,3 +90,29 @@
   django-admin startproject music_controller
   django-admin startapp api
   ```
+
+- link new app to project
+  - in `music_controller/settings.py/INSTALLED_APPS` add the following
+
+    ```python
+    'api.apps.ApiConfig',
+    'rest_framework'
+    ```
+
+- update the database
+
+  ```bash
+  python ./manage.py makemigrations
+  python ./manage.py migrate
+  ```
+
+- run server
+
+  ```bash
+  python ./manage.py runserver
+  ```
+
+- set up new view
+  - `project/urls.py/urlpatterns` add `path('', include('app.urls'))`
+  - `app/urls.py` add route points to endpoint func in `app/views.py`
+  - `app/views.py` add endpoint func
