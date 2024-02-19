@@ -69,3 +69,8 @@
 
 ## VS Code extensions
 
+- Prettier
+- Python
+- Django
+- React(ES7+ React/Redux/React-Native snippets)
+- JavaScript(JavaScript (ES6) code snippets)
