@@ -3,6 +3,7 @@
 - [ongakuma notes](#ongakuma-notes)
   - [venv](#venv)
   - [nvm npm](#nvm-npm)
+  - [VS Code extensions](#vs-code-extensions)
 
 ## venv
 
@@ -53,6 +54,7 @@
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
     ```
 
+- install npm/node
   - list remote available versions of node
 
     ```bash
@@ -64,3 +66,6 @@
     ```bash
     nvm install 20.11.1
     ```
+
+## VS Code extensions
+
