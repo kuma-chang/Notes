@@ -5,6 +5,7 @@
   - [nvm npm](#nvm-npm)
   - [VS Code extensions](#vs-code-extensions)
   - [Set up Django](#set-up-django)
+  - [Add model to database](#add-model-to-database)
 
 ## venv
 
@@ -116,3 +117,16 @@
   - `project/urls.py/urlpatterns` add `path('', include('app.urls'))`
   - `app/urls.py` add route points to endpoint func in `app/views.py`
   - `app/views.py` add endpoint func
+
+## Add model to database
+
+- Add model class in app/models.py
+
+  ```python
+  class Room(models.Model):
+    code = models.CharField(max_length=8, default="", unique=True)
+    host = models.CharField(max_length=50, unique=True)
+    guest_can_pause = models.BooleanField(null=False, default=False)
+    votes_to_skip = models.IntegerField(null=False, default=1)
+    created_at = models.DateTimeField(auto_now_add=True)
+  ```
