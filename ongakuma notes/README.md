@@ -6,6 +6,7 @@
   - [VS Code extensions](#vs-code-extensions)
   - [Set up Django](#set-up-django)
   - [Add model to database](#add-model-to-database)
+  - [Add API view](#add-api-view)
 
 ## venv
 
@@ -120,7 +121,7 @@
 
 ## Add model to database
 
-- Add model class in app/models.py
+- Add model class in `app/models.py`
 
   ```python
   class Room(models.Model):
@@ -129,4 +130,34 @@
     guest_can_pause = models.BooleanField(null=False, default=False)
     votes_to_skip = models.IntegerField(null=False, default=1)
     created_at = models.DateTimeField(auto_now_add=True)
+  ```
+
+## Add API view
+
+- Add  model serializer in `app/serializers.py`
+
+  ```python
+  class RoomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Room
+        fields = ('id', 'code', 'host', 'guest_can_pause',
+                  'votes_to_skip', 'created_at')
+  ```
+
+- Add view in `app/views.py`
+  - CreateAPIView: with create ui
+  - ListAPIView: view only
+
+  ```python
+  class RoomView (generics.CreateAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
+  ```
+
+- link view to url in `api/urls.py`
+
+  ```python
+  urlpatterns = [
+    path('', RoomView.as_view()),
+  ]
   ```
