@@ -13,13 +13,19 @@
 - Set up venv
 
   ``` bash
+  # Mac
   python3 -m venv tutorial-env
+  # Windows
+  python -m venv tutorial-env
   ```
 
 - Start up venv
 
   ```bash
+  # Mac
   source tutorial-evn/bin/activate
+  # Windows
+  .\tutorial-env\Scripts\Activate.ps1
   ```
 
 - Exit venv
