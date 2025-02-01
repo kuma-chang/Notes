@@ -5,6 +5,7 @@
   - [iTerm2](#iterm2)
   - [oh-my-zsh](#oh-my-zsh)
   - [Vim](#vim)
+  - [oh-my-posh](#oh-my-posh)
 
 ## Homebrew
 
@@ -113,3 +114,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
     set background=dark
     colorscheme solarized
     ```
+
+## oh-my-posh
+
+- [Install and set up](https://ohmyposh.dev/)
+- [Set up fonts](https://blog.danskingdom.com/Update-your-terminal-prompt-and-font-in-Windows-Terminal-and-VS-Code-and-Visual-Studio/)
